@@ -1,41 +1,27 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { getDb } from '@/lib/mongodb';
-import { verifyToken } from '@/lib/auth';
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL;
 
-export async function getUser(req: NextRequest) {
-  try {
-    const authHeader = req.headers.get('Authorization');
-    if (!authHeader || !authHeader.startsWith('Bearer ')) {
-      return null;
-    }
+export async function apiFetch(
+  path: string,
+  options: RequestInit = {}
+) {
+  const token =
+    typeof window !== "undefined"
+      ? localStorage.getItem("access_token")
+      : null;
 
-    const token = authHeader.split(' ')[1];
-    const payload: any = verifyToken(token);
-    
-    if (!payload || !payload.sub) {
-      return null;
-    }
+  const res = await fetch(`${API_BASE}${path}`, {
+    ...options,
+    headers: {
+      "Content-Type": "application/json",
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+      ...options.headers,
+    },
+  });
 
-    const db = await getDb();
-    const user = await db.collection('users').findOne({ email: payload.sub });
-
-    if (!user) {
-      return null;
-    }
-
-    return {
-      ...user,
-      id: user._id.toString()
-    };
-  } catch (error) {
-    return null;
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(text || "API Error");
   }
-}
 
-export function errorResponse(error: any) {
-  return NextResponse.json({ detail: error.message || "Internal Server Error" }, { status: 500 });
-}
-
-export function forbiddenResponse() {
-  return NextResponse.json({ detail: "Forbidden" }, { status: 403 });
+  return res.json();
 }
