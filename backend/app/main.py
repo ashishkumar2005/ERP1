@@ -7,14 +7,14 @@ from typing import List, Optional
 from bson import ObjectId
 
 from . import models, schemas, auth, config
-from .database import get_db, connect_to_mongo
+from .database import get_db, connect_to_mongo, close_mongo_connection
 
 app = FastAPI(title="EduPulse ERP API")
 
 # -------------------- CORS --------------------
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],   # change later to frontend URL
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -142,14 +142,14 @@ async def delete_user(
 
     return {"message": "User deleted successfully"}
 
-# -------------------- STARTUP --------------------
+# -------------------- STARTUP / SHUTDOWN --------------------
 @app.on_event("startup")
 async def startup_event():
-    # ✅ ONLY connect to MongoDB
-    # ❌ NO bcrypt
-    # ❌ NO password hashing
-    # ❌ NO demo user creation
     await connect_to_mongo()
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    await close_mongo_connection()
 
 # -------------------- ROOT --------------------
 @app.get("/")
