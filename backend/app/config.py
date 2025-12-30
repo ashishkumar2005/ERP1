@@ -1,18 +1,15 @@
-import os
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "your-super-secret-key-change-it")
+    SECRET_KEY: str
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
 
-    # ✅ ACCEPT BOTH ENV VARIABLE NAMES
-    MONGODB_URL: str = (
-        os.getenv("MONGODB_URL")
-        or os.getenv("MONGODB_URI")
-        or "mongodb://localhost:27017"
-    )
-
+    MONGODB_URL: str
     DATABASE_NAME: str = "edupulse"
+
+    class Config:
+        env_file = ".env"
+        extra = "ignore"
 
 settings = Settings()
