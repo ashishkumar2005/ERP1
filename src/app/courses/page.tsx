@@ -39,13 +39,13 @@ export default function CoursesPage() {
       </section>
 
       <section className="py-8">
-        <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-6">
+        <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-2 lg:grid-cols-3 md:px-6">
           {courses.map((course) => {
             const image = courseImages.find((img) => img.id === course.imageId);
             return (
               <div key={course.id} id={course.id} className="scroll-mt-20">
                 <Card className="flex h-full flex-col overflow-hidden">
-                  <div className="relative h-64 w-full">
+                  <div className="relative h-48 w-full">
                     {image && (
                       <Image
                         src={image.imageUrl}
@@ -57,23 +57,23 @@ export default function CoursesPage() {
                     )}
                   </div>
                   <div className="flex flex-grow flex-col">
-                    <CardHeader>
-                      <CardTitle className="font-headline text-lg">
+                    <CardHeader className="p-4">
+                      <CardTitle className="font-headline text-xl">
                         {course.name}
                       </CardTitle>
-                      <CardDescription className="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2">
+                      <CardDescription className="flex flex-wrap items-center gap-x-2 gap-y-2 pt-2">
                         <Badge variant="secondary">
                           Duration: {course.duration}
                         </Badge>
                         <Badge variant="secondary">Fees: {course.fees}</Badge>
                       </CardDescription>
                     </CardHeader>
-                    <CardContent className="flex-grow space-y-4">
-                      <p className="text-muted-foreground">
+                    <CardContent className="flex-grow space-y-3 p-4 pt-0">
+                      <p className="text-sm text-muted-foreground">
                         {course.longDescription}
                       </p>
                       <div>
-                        <h3 className="mb-2 font-semibold text-foreground">
+                        <h3 className="mb-1 text-base font-semibold text-foreground">
                           Syllabus Overview
                         </h3>
                         <Accordion
@@ -83,9 +83,11 @@ export default function CoursesPage() {
                         >
                           {course.syllabus.map((module, i) => (
                             <AccordionItem key={i} value={`item-${i}`}>
-                              <AccordionTrigger>{module.title}</AccordionTrigger>
-                              <AccordionContent>
-                                <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
+                              <AccordionTrigger className="py-2 text-sm">
+                                {module.title}
+                              </AccordionTrigger>
+                              <AccordionContent className="pb-2">
+                                <ul className="list-disc space-y-1 pl-4 text-sm text-muted-foreground">
                                   {module.content.map((item, j) => (
                                     <li key={j}>{item}</li>
                                   ))}
@@ -96,8 +98,8 @@ export default function CoursesPage() {
                         </Accordion>
                       </div>
                     </CardContent>
-                    <CardFooter>
-                      <Button asChild className="w-full" size="lg">
+                    <CardFooter className="p-4">
+                      <Button asChild className="w-full">
                         <Link href="/admissions">Enroll in this Course</Link>
                       </Button>
                     </CardFooter>
