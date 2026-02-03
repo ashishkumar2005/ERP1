@@ -69,9 +69,9 @@ export function CareerGuidanceForm() {
     <div className="w-full max-w-2xl">
       {!result ? (
         <Card>
-          <CardContent className="p-4">
+          <CardContent className="p-8">
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
                   control={form.control}
                   name="interests"
@@ -81,7 +81,7 @@ export function CareerGuidanceForm() {
                       <FormControl>
                         <Textarea
                           placeholder="e.g., solving puzzles, visual design, building things from scratch, video games..."
-                          rows={2}
+                          rows={4}
                           {...field}
                         />
                       </FormControl>
@@ -98,7 +98,7 @@ export function CareerGuidanceForm() {
                       <FormControl>
                         <Textarea
                           placeholder="e.g., good at math, creative problem-solving, logical thinking, communicating ideas..."
-                          rows={2}
+                          rows={4}
                           {...field}
                         />
                       </FormControl>
@@ -120,7 +120,7 @@ export function CareerGuidanceForm() {
         </Card>
       ) : (
         <Card className="w-full">
-          <CardContent className="p-4">
+          <CardContent className="p-8">
             <div className="flex items-center justify-center">
               <Sparkles className="mr-2 h-8 w-8 text-primary" />
               <h2 className="font-headline text-2xl font-bold">
@@ -128,7 +128,7 @@ export function CareerGuidanceForm() {
               </h2>
             </div>
 
-            <div className="prose prose-blue dark:prose-invert mt-4 max-w-none text-foreground">
+            <div className="prose prose-blue dark:prose-invert mt-6 max-w-none text-foreground">
               <p>
                 Based on your interests and aptitudes, here are some course
                 recommendations that could be a great fit for you:
@@ -140,7 +140,7 @@ export function CareerGuidanceForm() {
               />
             </div>
 
-            <Button onClick={() => setResult(null)} className="mt-6 w-full">
+            <Button onClick={() => setResult(null)} className="mt-8 w-full">
               Start Over
             </Button>
           </CardContent>
