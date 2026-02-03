@@ -26,19 +26,19 @@ const courseImages = PlaceHolderImages.filter((img) =>
 export default function CoursesPage() {
   return (
     <div className="bg-background">
-      <section className="bg-card py-20 md:py-32">
+      <section className="bg-card py-12 md:py-20">
         <div className="container mx-auto px-4 text-center md:px-6">
-          <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+          <h1 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
             Our Courses
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
+          <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground md:text-xl">
             Explore our range of expert-led courses designed to equip you with
             the skills for academic excellence.
           </p>
         </div>
       </section>
 
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-16">
         <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-6">
           {courses.map((course) => {
             const image = courseImages.find((img) => img.id === course.imageId);
