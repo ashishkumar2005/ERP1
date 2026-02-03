@@ -41,7 +41,7 @@ export default function ContactPage() {
   return (
     <div className="bg-background">
       {/* Hero Section */}
-      <section className="relative h-[200px] md:h-[250px] w-full">
+      <section className="relative h-[150px] md:h-[200px] w-full">
         {contactImage && (
           <Image
             src={contactImage.imageUrl}
@@ -54,10 +54,10 @@ export default function ContactPage() {
         )}
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-background to-transparent">
           <div className="container mx-auto px-4 text-center md:px-6">
-            <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+            <h1 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
               Get in Touch
             </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+            <p className="mx-auto mt-2 max-w-2xl text-base text-muted-foreground">
               We&apos;re here to help. Whether you have a question about our
               courses or need support, we&apos;re ready to assist you.
             </p>
