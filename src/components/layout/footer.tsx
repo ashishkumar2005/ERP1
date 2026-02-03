@@ -47,7 +47,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-primary-foreground/80">
-              Wisdom for a Digital Tomorrow.
+              Expert guidance for academic excellence and career-ready skills.
             </p>
           </div>
 
