@@ -33,7 +33,7 @@ export default function CoursesPage() {
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
             Explore our range of expert-led courses designed to equip you with
-            the most in-demand skills in the tech industry.
+            the skills for academic excellence.
           </p>
         </div>
       </section>
@@ -44,21 +44,24 @@ export default function CoursesPage() {
             const image = courseImages.find((img) => img.id === course.imageId);
             const isReversed = index % 2 !== 0;
             return (
-              <div
-                key={course.id}
-                id={course.id}
-                className="scroll-mt-20"
-              >
+              <div key={course.id} id={course.id} className="scroll-mt-20">
                 <Card className="overflow-hidden">
-                  <div className={`grid grid-cols-1 md:grid-cols-2 ${isReversed ? 'md:grid-flow-col-dense' : ''}`}>
-                    <div className={`order-last md:order-first ${isReversed ? 'md:order-last' : ''}`}>
+                  <div
+                    className={`grid grid-cols-1 md:grid-cols-2 ${
+                      isReversed ? 'md:grid-flow-col-dense' : ''
+                    }`}
+                  >
+                    <div
+                      className={`relative min-h-[300px] md:min-h-[400px] ${
+                        isReversed ? 'md:order-last' : ''
+                      }`}
+                    >
                       {image && (
                         <Image
                           src={image.imageUrl}
                           alt={image.description}
-                          width={800}
-                          height={600}
-                          className="h-full w-full object-cover"
+                          fill
+                          className="object-cover"
                           data-ai-hint={image.imageHint}
                         />
                       )}
@@ -72,9 +75,7 @@ export default function CoursesPage() {
                           <Badge variant="secondary">
                             Duration: {course.duration}
                           </Badge>
-                          <Badge variant="secondary">
-                            Fees: {course.fees}
-                          </Badge>
+                          <Badge variant="secondary">Fees: {course.fees}</Badge>
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="flex-grow space-y-4">
@@ -82,7 +83,7 @@ export default function CoursesPage() {
                           {course.longDescription}
                         </p>
                         <div>
-                          <h3 className="font-semibold text-foreground mb-2">
+                          <h3 className="mb-2 font-semibold text-foreground">
                             Syllabus Overview
                           </h3>
                           <Accordion
@@ -91,10 +92,7 @@ export default function CoursesPage() {
                             className="w-full"
                           >
                             {course.syllabus.map((module, i) => (
-                              <AccordionItem
-                                key={i}
-                                value={`item-${i}`}
-                              >
+                              <AccordionItem key={i} value={`item-${i}`}>
                                 <AccordionTrigger>
                                   {module.title}
                                 </AccordionTrigger>

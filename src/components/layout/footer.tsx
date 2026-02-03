@@ -47,8 +47,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-primary-foreground/80">
-              Empowering the next generation of tech leaders through quality
-              education and hands-on training.
+              Wisdom for a Digital Tomorrow.
             </p>
           </div>
 
@@ -75,24 +74,24 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-1 h-4 w-4 flex-shrink-0" />
-                <span>123 Tech Park, Silicon Valley, CA 94002</span>
+                <span>S.D.O. ROAD, HAJIPUR, VAISHALI, BIHAR-84101</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 flex-shrink-0" />
                 <a
-                  href="mailto:contact@futurewise.com"
+                  href="mailto:futurewiseedutech@gmail.com"
                   className="transition-colors hover:text-primary-foreground"
                 >
-                  contact@futurewise.com
+                  futurewiseedutech@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 flex-shrink-0" />
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+918579948889"
                   className="transition-colors hover:text-primary-foreground"
                 >
-                  +1 (234) 567-890
+                  +91 8579948889
                 </a>
               </li>
             </ul>
@@ -135,7 +134,7 @@ export function Footer() {
         </div>
       </div>
       <a
-        href="https://wa.me/1234567890" // Replace with your WhatsApp number
+        href="https://wa.me/918579948889"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"

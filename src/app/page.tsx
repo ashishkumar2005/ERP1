@@ -2,11 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   ArrowRight,
-  BarChart,
   BookOpen,
-  Briefcase,
-  Star,
-  Zap,
+  BrainCircuit,
+  ShieldCheck,
+  Trophy,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -17,41 +16,34 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { courses, partners, testimonials } from '@/lib/data';
+import { courses, testimonials } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-students');
+const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-classroom');
 const courseImages = PlaceHolderImages.filter((img) =>
   courses.map((c) => c.imageId).includes(img.id)
 );
 const testimonialImages = PlaceHolderImages.filter((img) =>
   testimonials.map((t) => t.imageId).includes(img.id)
 );
-const partnerLogos = PlaceHolderImages.filter((img) =>
-  partners.map((p) => p.imageId).includes(img.id)
-);
 
 export default function Home() {
   const stats = [
     {
-      icon: <Briefcase className="h-8 w-8 text-primary" />,
-      value: '95%',
-      label: 'Students Placed',
+      icon: <Trophy className="h-8 w-8 text-primary" />,
+      label: 'IIT-JEE/NEET Courses',
     },
     {
       icon: <BookOpen className="h-8 w-8 text-primary" />,
-      value: '10+',
-      label: 'Courses Offered',
+      label: 'Classes 1st to 12th',
     },
     {
-      icon: <BarChart className="h-8 w-8 text-primary" />,
-      value: '15+',
-      label: 'Years of Experience',
+      icon: <BrainCircuit className="h-8 w-8 text-primary" />,
+      label: 'Concept Clarity & Smart Learning',
     },
     {
-      icon: <Zap className="h-8 w-8 text-primary" />,
-      value: '5k+',
-      label: 'Happy Students',
+      icon: <ShieldCheck className="h-8 w-8 text-primary" />,
+      label: 'Supportive Environment',
     },
   ];
 
@@ -62,12 +54,11 @@ export default function Home() {
         <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:px-6">
           <div className="space-y-6 text-center md:text-left">
             <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-              Shape Your Future with Technology
+              Quality Coaching for Academic Success
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
-              Unlock your potential with our expert-led courses in web
-              development, data science, and AI. Join Futurewise Edutech and
-              start your journey to a rewarding career.
+              Expert guidance for classes 1 to 12 (CBSE), IIT-JEE, NEET,
+              Olympiads & more.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
               <Button asChild size="lg">
@@ -96,18 +87,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Features Section */}
       <section className="py-16 sm:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {stats.map((stat, index) => (
-              <div key={index} className="flex flex-col items-center gap-2 text-center">
+              <div
+                key={index}
+                className="flex flex-col items-center gap-3 text-center"
+              >
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                   {stat.icon}
                 </div>
-                <p className="font-headline text-4xl font-bold text-primary">
-                  {stat.value}
-                </p>
                 <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
                   {stat.label}
                 </p>
@@ -125,13 +116,15 @@ export default function Home() {
               Our Premier Courses
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-              Choose from a range of courses designed to make you a skilled
-              professional in the tech industry.
+              Choose from a range of courses designed to build a strong
+              academic foundation.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {courses.slice(0, 3).map((course) => {
-              const image = courseImages.find((img) => img.id === course.imageId);
+            {courses.map((course) => {
+              const image = courseImages.find(
+                (img) => img.id === course.imageId
+              );
               return (
                 <Card
                   key={course.id}
@@ -184,7 +177,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-12 text-center">
             <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-              Success Stories from Our Alumni
+              Success Stories from Our Students
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
               Hear what our past students have to say about their experience at
@@ -234,28 +227,6 @@ export default function Home() {
                 </Card>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section className="bg-card py-16 sm:py-20">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="mb-8 text-center text-xl font-semibold uppercase tracking-wider text-muted-foreground">
-            Our Graduates Work at Top Companies
-          </h2>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            {partnerLogos.map((logo) => (
-              <div key={logo.id} className="relative h-12 w-32 grayscale opacity-60 transition-all hover:grayscale-0 hover:opacity-100">
-                <Image
-                  src={logo.imageUrl}
-                  alt={logo.description}
-                  layout="fill"
-                  objectFit="contain"
-                  data-ai-hint={logo.imageHint}
-                />
-              </div>
-            ))}
           </div>
         </div>
       </section>

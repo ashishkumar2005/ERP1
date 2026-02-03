@@ -1,5 +1,13 @@
 import Image from 'next/image';
-import { CheckCircle, Lightbulb, Target } from 'lucide-react';
+import {
+  BookCopy,
+  CheckCircle,
+  Lightbulb,
+  ShieldCheck,
+  Target,
+  TestTube2,
+  Users,
+} from 'lucide-react';
 import {
   Card,
   CardContent,
@@ -10,7 +18,9 @@ import {
 import { faculty } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-const visionImage = PlaceHolderImages.find((img) => img.id === 'about-vision');
+const visionImage = PlaceHolderImages.find(
+  (img) => img.id === 'about-students-future'
+);
 const facultyImages = PlaceHolderImages.filter((img) =>
   faculty.map((f) => f.imageId).includes(img.id)
 );
@@ -18,20 +28,20 @@ const facultyImages = PlaceHolderImages.filter((img) =>
 export default function AboutPage() {
   const credibilityBadges = [
     {
-      name: 'Certified Instructors',
-      icon: <CheckCircle className="h-6 w-6 text-primary" />,
+      name: 'Expert Guidance',
+      icon: <Users className="h-6 w-6 text-primary" />,
     },
     {
-      name: 'Industry-Relevant Curriculum',
-      icon: <CheckCircle className="h-6 w-6 text-primary" />,
+      name: 'Concept Clarity',
+      icon: <Lightbulb className="h-6 w-6 text-primary" />,
     },
     {
-      name: 'Project-Based Learning',
-      icon: <CheckCircle className="h-6 w-6 text-primary" />,
+      name: 'Weekly Tests',
+      icon: <BookCopy className="h-6 w-6 text-primary" />,
     },
     {
-      name: 'Career Support',
-      icon: <CheckCircle className="h-6 w-6 text-primary" />,
+      name: 'Safe & Supportive',
+      icon: <ShieldCheck className="h-6 w-6 text-primary" />,
     },
   ];
 
@@ -44,9 +54,9 @@ export default function AboutPage() {
             About Futurewise Edutech
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
-            We are dedicated to shaping the future of tech professionals by
-            providing accessible, high-quality education and fostering a
-            community of lifelong learners.
+            We are committed to providing quality coaching for academic success,
+            guiding students to achieve their dreams with wisdom for a digital
+            tomorrow.
           </p>
         </div>
       </section>
@@ -64,11 +74,10 @@ export default function AboutPage() {
                   Our Mission
                 </h2>
                 <p className="mt-2 text-muted-foreground">
-                  To democratize tech education by offering cutting-edge courses
-                  that are affordable and accessible to everyone, regardless of
-                  their background. We strive to empower our students with the
-                  practical skills and confidence needed to excel in the tech
-                  industry.
+                  To provide quality coaching for academic excellence. We focus
+                  on expert guidance for classes 1 to 12 (CBSE), IIT-JEE, NEET,
+                  Olympiads, and more, ensuring every student gets personalized
+                  attention and a strong conceptual foundation.
                 </p>
               </div>
             </div>
@@ -81,10 +90,10 @@ export default function AboutPage() {
                   Our Vision
                 </h2>
                 <p className="mt-2 text-muted-foreground">
-                  To be a leading global institution for technology education,
-                  renowned for our innovative teaching methods, commitment to
-                  student success, and contribution to a future where anyone
-                  can build a successful career in technology.
+                  To be the most trusted coaching institute, empowering students
+                  with the knowledge and skills to succeed in a competitive
+                  world. We envision a future where our students become leaders,
+                  driven by wisdom and a passion for learning.
                 </p>
               </div>
             </div>
@@ -153,7 +162,7 @@ export default function AboutPage() {
                     {image && (
                       <Image
                         src={image.imageUrl}
-                        alt={image.description}
+                        alt={member.name}
                         width={128}
                         height={128}
                         className="h-32 w-32 rounded-full object-cover shadow-md"

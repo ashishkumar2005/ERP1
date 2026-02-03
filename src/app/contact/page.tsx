@@ -13,26 +13,28 @@ import {
 } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-const contactImage = PlaceHolderImages.find((img) => img.id === 'contact-hero');
+const contactImage = PlaceHolderImages.find(
+  (img) => img.id === 'contact-reception'
+);
 
 export default function ContactPage() {
   const contactDetails = [
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: 'Our Address',
-      value: '123 Tech Park, Silicon Valley, CA 94002',
+      value: 'S.D.O. ROAD, HAJIPUR, VAISHALI, BIHAR-84101',
     },
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: 'Email Us',
-      value: 'contact@futurewise.com',
-      href: 'mailto:contact@futurewise.com',
+      value: 'futurewiseedutech@gmail.com',
+      href: 'mailto:futurewiseedutech@gmail.com',
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: 'Call Us',
-      value: '+1 (234) 567-890',
-      href: 'tel:+1234567890',
+      value: '+91 8579948889',
+      href: 'tel:+918579948889',
     },
   ];
 
@@ -133,9 +135,18 @@ export default function ContactPage() {
                 </div>
               ))}
             </div>
-            
+
             <div className="h-80 w-full rounded-lg bg-muted flex items-center justify-center text-muted-foreground">
-                Google Maps Placeholder
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.638912181654!2d85.378964!3d25.749503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed65f555555555%3A0x8633e4bcf84f6962!2sS.D.O.%20Rd%2C%20Hajipur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Maps Location"
+              ></iframe>
             </div>
           </div>
         </div>

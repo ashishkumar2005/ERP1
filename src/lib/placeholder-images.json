@@ -1,118 +1,76 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-students",
-      "description": "Happy students collaborating in a modern classroom.",
-      "imageUrl": "https://images.unsplash.com/photo-1758270704787-615782711641?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3R1ZGVudHMlMjBjbGFzc3Jvb218ZW58MHx8fHwxNzcwMDAwNDkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "hero-classroom",
+      "description": "Students listening attentively in a bright, modern classroom.",
+      "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMGNsYXNzcm9vbXxlbnwwfHx8fDE3NzAwMDA0OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "students classroom"
     },
     {
-      "id": "course-fullstack",
-      "description": "A computer screen with lines of code for web development.",
-      "imageUrl": "https://images.unsplash.com/photo-1675495666589-94cdafbcfcc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb2RlJTIwcHJvZ3JhbW1pbmd8ZW58MHx8fHwxNzcwMDk3ODgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "code programming"
+      "id": "course-classroom",
+      "description": "A teacher explaining a concept on a whiteboard to a small group of students.",
+      "imageUrl": "https://images.unsplash.com/photo-1758685849145-cd8bfb57ab2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFjaGVyJTIwd2hpdGVib2FyZHxlbnwwfHx8fDE3NzAxMTcyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teacher whiteboard"
     },
     {
-      "id": "course-datascience",
-      "description": "Abstract visualization of data networks and graphs.",
-      "imageUrl": "https://images.unsplash.com/photo-1584291527908-033f4d6542c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwwfHx8fDE3NzAwMzQ4MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "data visualization"
+      "id": "course-science-lab",
+      "description": "Students conducting an experiment in a science laboratory with beakers and test tubes.",
+      "imageUrl": "https://images.unsplash.com/photo-1614308457932-e16d85c5d053?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzY2llbmNlJTIwbGFib3JhdG9yeXxlbnwwfHx8fDE3NzAwODY1MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science laboratory"
     },
     {
-      "id": "course-python",
-      "description": "The Python language logo on a dark background.",
-      "imageUrl": "https://images.unsplash.com/photo-1649180556628-9ba704115795?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxweXRob24lMjBsb2dvfGVufDB8fHx8MTc3MDExNjc4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "python logo"
+      "id": "course-library",
+      "description": "A student studying diligently in a library full of books.",
+      "imageUrl": "https://images.unsplash.com/photo-1722248540590-ba8b7af1d7b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdHVkZW50JTIwbGlicmFyeXxlbnwwfHx8fDE3NzAxMDI2NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student library"
     },
     {
-      "id": "course-java",
-      "description": "The Java language logo with a coffee cup.",
-      "imageUrl": "https://picsum.photos/seed/204/600/400",
-      "imageHint": "java logo"
+      "id": "testimonial-student1",
+      "description": "Portrait of a smiling male student.",
+      "imageUrl": "https://images.unsplash.com/photo-1631131428457-3c14bdcb81d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYWxlJTIwc3R1ZGVudHxlbnwwfHx8fDE3NzAxMTcyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male student"
     },
     {
-      "id": "course-aiml",
-      "description": "A futuristic illustration of an artificial intelligence brain.",
-      "imageUrl": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDB8fHx8MTc3MDA2Nzk1MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "artificial intelligence"
+      "id": "testimonial-student2",
+      "description": "Portrait of a smiling female student.",
+      "imageUrl": "https://images.unsplash.com/photo-1584473457409-ae5c91d7d8b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmZW1hbGUlMjBzdHVkZW50fGVufDB8fHx8MTc3MDAxMzAxOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "female student"
     },
     {
-      "id": "testimonial-sarah",
-      "description": "Portrait of Sarah Johnson.",
-      "imageUrl": "https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MDExMjU4OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "id": "testimonial-student3",
+      "description": "Portrait of a confident student.",
+      "imageUrl": "https://images.unsplash.com/photo-1729821728580-fa2b3efed2bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb25maWRlbnQlMjBzdHVkZW50fGVufDB8fHx8MTc3MDExNzI2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "confident student"
     },
     {
-      "id": "testimonial-michael",
-      "description": "Portrait of Michael Chen.",
-      "imageUrl": "https://images.unsplash.com/photo-1636377985931-898218afd306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzAwNzk1MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
+      "id": "faculty-teacher1",
+      "description": "Portrait of an experienced male teacher.",
+      "imageUrl": "https://images.unsplash.com/photo-1758270704925-fa59d93119c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYWxlJTIwdGVhY2hlcnxlbnwwfHx8fDE3NzAxMTcyNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male teacher"
     },
     {
-      "id": "testimonial-priya",
-      "description": "Portrait of Priya Patel.",
-      "imageUrl": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzcwMDc4NTE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman smiling"
+      "id": "faculty-teacher2",
+      "description": "Portrait of a friendly female teacher.",
+      "imageUrl": "https://images.unsplash.com/photo-1546950430-2aa61cd43018?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmVtYWxlJTIwdGVhY2hlcnxlbnwwfHx8fDE3NzAxMTcyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "female teacher"
     },
     {
-      "id": "logo-innovate",
-      "description": "Logo for Innovate Inc.",
-      "imageUrl": "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NzAwNDE1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "company logo"
+      "id": "faculty-teacher3",
+      "description": "Portrait of a young male instructor.",
+      "imageUrl": "https://images.unsplash.com/photo-1734873477108-6837b02f2b9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYWxlJTIwaW5zdHJ1Y3RvcnxlbnwwfHx8fDE3NzAxMTcyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male instructor"
     },
     {
-      "id": "logo-techcorp",
-      "description": "Logo for TechCorp.",
-      "imageUrl": "https://images.unsplash.com/photo-1662052955098-042b46e60c2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0ZWNoJTIwbG9nb3xlbnwwfHx8fDE3NzAwMjg1NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tech logo"
+      "id": "about-students-future",
+      "description": "A group of students looking hopefully towards the horizon.",
+      "imageUrl": "https://images.unsplash.com/photo-1598546549979-78d020cf03d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdHVkZW50cyUyMGZ1dHVyZXxlbnwwfHx8fDE3NzAwNTA1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students future"
     },
     {
-      "id": "logo-datawise",
-      "description": "Logo for Datawise LLC.",
-      "imageUrl": "https://images.unsplash.com/photo-1761223956849-c6912f2179aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmFseXRpY3MlMjBsb2dvfGVufDB8fHx8MTc3MDExNjc4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "analytics logo"
-    },
-    {
-      "id": "logo-quantumleap",
-      "description": "Logo for QuantumLeap.",
-      "imageUrl": "https://images.unsplash.com/photo-1760037028553-3c5c801f18c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGxvZ298ZW58MHx8fHwxNzcwMDcyNjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract logo"
-    },
-    {
-      "id": "logo-nextgen",
-      "description": "Logo for NextGen Solutions.",
-      "imageUrl": "https://images.unsplash.com/photo-1610801653372-eeda4cbcd298?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjBsb2dvfGVufDB8fHx8MTc3MDAzNzY2NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "modern logo"
-    },
-    {
-      "id": "faculty-alan",
-      "description": "Portrait of Dr. Alan Grant.",
-      "imageUrl": "https://images.unsplash.com/photo-1758685734614-63fe30c18b79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzb3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzAwMDUzNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professor portrait"
-    },
-    {
-      "id": "faculty-jane",
-      "description": "Portrait of Jane Smith.",
-      "imageUrl": "https://images.unsplash.com/photo-1548698979-4320be032459?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFjaGVyJTIwc21pbGluZ3xlbnwwfHx8fDE3NzAxMTY3ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "teacher smiling"
-    },
-    {
-      "id": "faculty-robert",
-      "description": "Portrait of Robert Brown.",
-      "imageUrl": "https://images.unsplash.com/photo-1515994034738-1f437c226687?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbnN0cnVjdG9yJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcwMTE2NzgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "instructor portrait"
-    },
-    {
-      "id": "about-vision",
-      "description": "Image representing vision and future.",
-      "imageUrl": "https://images.unsplash.com/photo-1709139451852-3f68fdc1ca4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWxlc2NvcGUlMjBzdGFyc3xlbnwwfHx8fDE3NzAwODk0MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "telescope stars"
-    },
-    {
-      "id": "contact-hero",
-      "description": "A person on a call in a modern office.",
-      "imageUrl": "https://images.unsplash.com/photo-1626863905121-3b0c0ed7b94c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjdXN0b21lciUyMHN1cHBvcnR8ZW58MHx8fHwxNzcwMDQ0OTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "customer support"
+      "id": "contact-reception",
+      "description": "The welcoming reception area of a coaching institute.",
+      "imageUrl": "https://images.unsplash.com/photo-1505410603994-c3ac6269711f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvZmZpY2UlMjByZWNlcHRpb258ZW58MHx8fHwxNzcwMTE3MjY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office reception"
     }
   ]
 }

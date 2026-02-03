@@ -6,21 +6,19 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 
 export const metadata: Metadata = {
-  title: 'Futurewise Edutech | Best IT Training Institute',
+  title: 'Futurewise Edutech | Quality Coaching for Academic Success',
   description:
-    'Join Futurewise Edutech for top-tier coaching in Full Stack, Data Science, AI/ML, and more. Boost your career with our expert-led IT training courses.',
+    'Expert guidance for classes 1-12 (CBSE), IIT-JEE, NEET, Olympiads & more in Hajipur, Vaishali.',
   keywords: [
-    'Coaching Institute',
-    'Full Stack Course',
-    'Data Science Course',
-    'AI/ML Course',
-    'Best IT Training Institute',
+    'Coaching Institute Hajipur',
+    'IIT-JEE Coaching',
+    'NEET Coaching',
+    'CBSE Tuition',
+    'Olympiad Preparation',
     'Futurewise Edutech',
-    'Tech Courses',
-    'Career Guidance',
   ],
   openGraph: {
-    title: 'Futurewise Edutech | Best IT Training Institute',
+    title: 'Futurewise Edutech | Quality Coaching for Academic Success',
     description:
       'Unlock your potential with expert-led courses at Futurewise Edutech.',
     type: 'website',
