@@ -48,12 +48,12 @@ export default function AboutPage() {
   return (
     <div className="bg-background">
       {/* Hero Section */}
-      <section className="bg-card py-20 md:py-32">
+      <section className="bg-card py-12 md:py-16">
         <div className="container mx-auto px-4 text-center md:px-6">
-          <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+          <h1 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
             About Futurewise Edutech
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
+          <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
             We are committed to providing quality coaching for academic success,
             guiding students to achieve their dreams with wisdom for a digital
             tomorrow.
