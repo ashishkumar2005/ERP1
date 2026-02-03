@@ -35,15 +35,6 @@ export const courses: Course[] = [
     fees: 'Varies by Class',
     syllabus: [
       {
-        title: 'Core Subjects',
-        content: [
-          'Mathematics',
-          'Science (Physics, Chemistry, Biology)',
-          'English',
-          'Social Studies',
-        ],
-      },
-      {
         title: 'Learning Methodology',
         content: [
           'Concept Clarity Sessions',

@@ -39,81 +39,68 @@ export default function CoursesPage() {
       </section>
 
       <section className="py-16 sm:py-24">
-        <div className="container mx-auto space-y-16 px-4 md:px-6">
-          {courses.map((course, index) => {
+        <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-6">
+          {courses.map((course) => {
             const image = courseImages.find((img) => img.id === course.imageId);
-            const isReversed = index % 2 !== 0;
             return (
               <div key={course.id} id={course.id} className="scroll-mt-20">
-                <Card className="overflow-hidden">
-                  <div
-                    className={`grid grid-cols-1 md:grid-cols-2 ${
-                      isReversed ? 'md:grid-flow-col-dense' : ''
-                    }`}
-                  >
-                    <div
-                      className={`relative min-h-[300px] md:min-h-[400px] ${
-                        isReversed ? 'md:order-last' : ''
-                      }`}
-                    >
-                      {image && (
-                        <Image
-                          src={image.imageUrl}
-                          alt={image.description}
-                          fill
-                          className="object-cover"
-                          data-ai-hint={image.imageHint}
-                        />
-                      )}
-                    </div>
-                    <div className="flex flex-col">
-                      <CardHeader>
-                        <CardTitle className="font-headline text-3xl">
-                          {course.name}
-                        </CardTitle>
-                        <CardDescription className="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2">
-                          <Badge variant="secondary">
-                            Duration: {course.duration}
-                          </Badge>
-                          <Badge variant="secondary">Fees: {course.fees}</Badge>
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent className="flex-grow space-y-4">
-                        <p className="text-muted-foreground">
-                          {course.longDescription}
-                        </p>
-                        <div>
-                          <h3 className="mb-2 font-semibold text-foreground">
-                            Syllabus Overview
-                          </h3>
-                          <Accordion
-                            type="single"
-                            collapsible
-                            className="w-full"
-                          >
-                            {course.syllabus.map((module, i) => (
-                              <AccordionItem key={i} value={`item-${i}`}>
-                                <AccordionTrigger>
-                                  {module.title}
-                                </AccordionTrigger>
-                                <AccordionContent>
-                                  <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
-                                    {module.content.map((item, j) => (
-                                      <li key={j}>{item}</li>
-                                    ))}
-                                  </ul>
-                                </AccordionContent>
-                              </AccordionItem>
-                            ))}
-                          </Accordion>
-                        </div>
-                      </CardContent>
-                      <CardFooter>
-                        <Button asChild className="w-full" size="lg">
-                          <Link href="/admissions">Enroll in this Course</Link>
-                        </Button>
-                      </CardFooter>
-                    </div>
+                <Card className="flex h-full flex-col overflow-hidden">
+                  <div className="relative h-64 w-full">
+                    {image && (
+                      <Image
+                        src={image.imageUrl}
+                        alt={image.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={image.imageHint}
+                      />
+                    )}
+                  </div>
+                  <div className="flex flex-grow flex-col">
+                    <CardHeader>
+                      <CardTitle className="font-headline text-3xl">
+                        {course.name}
+                      </CardTitle>
+                      <CardDescription className="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2">
+                        <Badge variant="secondary">
+                          Duration: {course.duration}
+                        </Badge>
+                        <Badge variant="secondary">Fees: {course.fees}</Badge>
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex-grow space-y-4">
+                      <p className="text-muted-foreground">
+                        {course.longDescription}
+                      </p>
+                      <div>
+                        <h3 className="mb-2 font-semibold text-foreground">
+                          Syllabus Overview
+                        </h3>
+                        <Accordion
+                          type="single"
+                          collapsible
+                          className="w-full"
+                        >
+                          {course.syllabus.map((module, i) => (
+                            <AccordionItem key={i} value={`item-${i}`}>
+                              <AccordionTrigger>{module.title}</AccordionTrigger>
+                              <AccordionContent>
+                                <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
+                                  {module.content.map((item, j) => (
+                                    <li key={j}>{item}</li>
+                                  ))}
+                                </ul>
+                              </AccordionContent>
+                            </AccordionItem>
+                          ))}
+                        </Accordion>
+                      </div>
+                    </CardContent>
+                    <CardFooter>
+                      <Button asChild className="w-full" size="lg">
+                        <Link href="/admissions">Enroll in this Course</Link>
+                      </Button>
+                    </CardFooter>
                   </div>
                 </Card>
               </div>
