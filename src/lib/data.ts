@@ -9,14 +9,6 @@ export type Course = {
   imageId: string;
 };
 
-export type Testimonial = {
-  id: number;
-  quote: string;
-  author: string;
-  title: string;
-  imageId: string;
-};
-
 export type Partner = {
   id: number;
   name: string;
@@ -133,33 +125,6 @@ export const courses: Course[] = [
       },
     ],
     imageId: 'course-library',
-  },
-];
-
-export const testimonials: Testimonial[] = [
-  {
-    id: 1,
-    quote:
-      'Futurewise Edutech has been instrumental in my academic success. The teachers are incredibly supportive and their focus on concept clarity really helped me improve my grades.',
-    author: 'Aarav Sharma',
-    title: 'Class 12 Topper',
-    imageId: 'testimonial-student1',
-  },
-  {
-    id: 2,
-    quote:
-      'The foundation course for NEET was excellent. The weekly tests and doubt clearing sessions prepared me well for the pressure of the actual exam. I am grateful to the entire team.',
-    author: 'Sneha Reddy',
-    title: 'NEET Aspirant',
-    imageId: 'testimonial-student2',
-  },
-  {
-    id: 3,
-    quote:
-      'I joined for the Olympiad batch, and it was a fantastic experience. I learned so much beyond my school curriculum and it boosted my confidence immensely.',
-    author: 'Rohan Gupta',
-    title: 'NTSE Scholar',
-    imageId: 'testimonial-student3',
   },
 ];
 

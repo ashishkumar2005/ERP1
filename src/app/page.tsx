@@ -6,7 +6,6 @@ import {
   BrainCircuit,
   CheckCircle,
   ShieldCheck,
-  Star,
   Trophy,
   Users,
 } from 'lucide-react';
@@ -19,15 +18,12 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { courses, testimonials } from '@/lib/data';
+import { courses } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-classroom');
 const courseImages = PlaceHolderImages.filter((img) =>
   courses.map((c) => c.imageId).includes(img.id)
-);
-const testimonialImages = PlaceHolderImages.filter((img) =>
-  testimonials.map((t) => t.imageId).includes(img.id)
 );
 
 export default function Home() {
@@ -179,65 +175,6 @@ export default function Home() {
                 View All Courses <ArrowRight className="ml-2" />
               </Link>
             </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-16 sm:py-24">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="mb-12 text-center">
-            <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-              Success Stories from Our Students
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-              Hear what our past students have to say about their experience at
-              Futurewise Edutech.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {testimonials.map((testimonial) => {
-              const image = testimonialImages.find(
-                (img) => img.id === testimonial.imageId
-              );
-              return (
-                <Card
-                  key={testimonial.id}
-                  className="flex flex-col justify-between"
-                >
-                  <CardContent className="pt-6">
-                    <div className="flex text-yellow-400 mb-2">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-current" />
-                      ))}
-                    </div>
-                    <blockquote className="text-lg text-foreground">
-                      &ldquo;{testimonial.quote}&rdquo;
-                    </blockquote>
-                  </CardContent>
-                  <CardFooter className="flex items-center gap-4 pt-4">
-                    {image && (
-                      <Image
-                        src={image.imageUrl}
-                        alt={image.description}
-                        width={48}
-                        height={48}
-                        className="h-12 w-12 rounded-full object-cover"
-                        data-ai-hint={image.imageHint}
-                      />
-                    )}
-                    <div>
-                      <p className="font-semibold text-foreground">
-                        {testimonial.author}
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        {testimonial.title}
-                      </p>
-                    </div>
-                  </CardFooter>
-                </Card>
-              );
-            })}
           </div>
         </div>
       </section>

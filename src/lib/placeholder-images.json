@@ -25,27 +25,9 @@
       "imageHint": "student library"
     },
     {
-      "id": "testimonial-student1",
-      "description": "Portrait of a smiling male student.",
-      "imageUrl": "https://images.unsplash.com/photo-1631131428457-3c14bdcb81d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYWxlJTIwc3R1ZGVudHxlbnwwfHx8fDE3NzAxMTcyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "male student"
-    },
-    {
-      "id": "testimonial-student2",
-      "description": "Portrait of a smiling female student.",
-      "imageUrl": "https://images.unsplash.com/photo-1584473457409-ae5c91d7d8b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmZW1hbGUlMjBzdHVkZW50fGVufDB8fHx8MTc3MDAxMzAxOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "female student"
-    },
-    {
-      "id": "testimonial-student3",
-      "description": "Portrait of a confident student.",
-      "imageUrl": "https://images.unsplash.com/photo-1729821728580-fa2b3efed2bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb25maWRlbnQlMjBzdHVkZW50fGVufDB8fHx8MTc3MDExNzI2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "confident student"
-    },
-    {
       "id": "faculty-teacher1",
       "description": "Portrait of an experienced male teacher.",
-      "imageUrl": "https://images.unsplash.com/photo-1758270704925-fa59d93119c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYWxlJTIwdGVhY2hlcnxlbnwwfHx8fDE3NzAxMTcyNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758270704925-fa59d93119c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYWxlJTIwdGVhY2hlcnxlbnwwfHx8fDE3NzAxMTcyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "male teacher"
     },
     {
