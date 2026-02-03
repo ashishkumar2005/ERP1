@@ -58,7 +58,7 @@ export default function CoursesPage() {
                   </div>
                   <div className="flex flex-grow flex-col">
                     <CardHeader>
-                      <CardTitle className="font-headline text-3xl">
+                      <CardTitle className="font-headline text-2xl">
                         {course.name}
                       </CardTitle>
                       <CardDescription className="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2">
