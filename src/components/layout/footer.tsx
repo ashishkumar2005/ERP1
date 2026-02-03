@@ -47,8 +47,10 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-primary-foreground/80">
-              A modern coaching institute for practical knowledge, academic
-              excellence, and career-ready skills.
+              FutureWise EduTech is a modern coaching institute dedicated to
+              helping students gain practical knowledge, academic excellence, and
+              career-ready skills through expert guidance and structured
+              learning.
             </p>
           </div>
 
