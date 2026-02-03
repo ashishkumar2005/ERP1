@@ -47,7 +47,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-primary-foreground/80">
-              Expert guidance for academic excellence and career-ready skills.
+              A modern coaching institute for practical knowledge, academic
+              excellence, and career-ready skills.
             </p>
           </div>
 
