@@ -41,7 +41,7 @@ export default function ContactPage() {
   return (
     <div className="bg-background">
       {/* Hero Section */}
-      <section className="relative h-[300px] md:h-[400px] w-full">
+      <section className="relative h-[200px] md:h-[250px] w-full">
         {contactImage && (
           <Image
             src={contactImage.imageUrl}
