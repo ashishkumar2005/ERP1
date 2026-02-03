@@ -14,7 +14,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -70,25 +69,22 @@ export function CareerGuidanceForm() {
     <div className="w-full max-w-2xl">
       {!result ? (
         <Card>
-          <CardContent className="p-6">
+          <CardContent className="p-4">
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
                 <FormField
                   control={form.control}
                   name="interests"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-lg">Your Interests</FormLabel>
+                      <FormLabel>Your Interests</FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="e.g., solving puzzles, visual design, building things from scratch, video games..."
-                          rows={3}
+                          rows={2}
                           {...field}
                         />
                       </FormControl>
-                      <FormDescription>
-                        What topics, hobbies, or activities do you enjoy?
-                      </FormDescription>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -98,17 +94,14 @@ export function CareerGuidanceForm() {
                   name="aptitudes"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-lg">Your Aptitudes</FormLabel>
+                      <FormLabel>Your Aptitudes</FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="e.g., good at math, creative problem-solving, logical thinking, communicating ideas..."
-                          rows={3}
+                          rows={2}
                           {...field}
                         />
                       </FormControl>
-                      <FormDescription>
-                        What are your natural strengths and skills?
-                      </FormDescription>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -127,7 +120,7 @@ export function CareerGuidanceForm() {
         </Card>
       ) : (
         <Card className="w-full">
-          <CardContent className="p-6">
+          <CardContent className="p-4">
             <div className="flex items-center justify-center">
               <Sparkles className="mr-2 h-8 w-8 text-primary" />
               <h2 className="font-headline text-2xl font-bold">
