@@ -107,29 +107,29 @@ export const courses: Course[] = [
     imageId: 'course-science-lab',
   },
   {
-    id: 'olympiads-ntse',
-    name: 'Olympiads & NTSE Preparation',
+    id: 'special-batches',
+    name: 'Special Batches (CBSE/ICSE/BSEB)',
     description:
-      'Special batches designed to help students excel in national and international Olympiads and NTSE.',
+      'Special batches for students of CBSE, ICSE, and BSEB boards for focused preparation.',
     longDescription:
-      'We offer special batches for students preparing for various competitive examinations like NTSE, Science Olympiads, Math Olympiads, and more. Our program is designed to develop advanced problem-solving skills, logical reasoning, and a competitive mindset from an early age.',
-    duration: '6-12 Months',
+      'We offer specialized batches tailored to the curriculum of CBSE, ICSE, and BSEB boards. These batches provide focused attention and resources to help students excel in their board examinations. The curriculum is designed to cover all key subjects with an emphasis on board exam patterns.',
+    duration: '1 Year',
     fees: 'Contact for details',
     syllabus: [
       {
-        title: 'Mental Ability Test (MAT)',
-        content: ['Verbal & Non-Verbal Reasoning', 'Logical Puzzles'],
+        title: 'Board-specific Curriculum',
+        content: ['In-depth coverage of syllabus', 'Focus on important topics and patterns'],
       },
       {
-        title: 'Scholastic Aptitude Test (SAT)',
-        content: ['Advanced topics in Science, Maths, and Social Science'],
-      },
-      {
-        title: 'Problem Solving',
+        title: 'Subject Expertise',
         content: [
-          'Higher Order Thinking Skills (HOTS)',
-          'Previous Year Question Papers',
+          'Expert faculty for all major subjects',
+          'Tailored teaching methods for each board',
         ],
+      },
+      {
+        title: 'Exam Preparation',
+        content: ['Regular mock tests', 'Solving previous year papers', 'Time management strategies'],
       },
     ],
     imageId: 'course-library',
@@ -198,5 +198,5 @@ export const faculty: Faculty[] = [
 export const pastSuccesses: string = `
 - Student A: Interests in 'Physics' and 'problem-solving', aptitudes in 'analytical thinking' and 'mathematics'. Recommended IIT-JEE Foundation. Result: Secured admission in a top engineering college.
 - Student B: Interests in 'Biology' and 'helping others', aptitudes in 'memorization' and 'attention to detail'. Recommended NEET Foundation. Result: Pursuing MBBS from a reputed medical college.
-- Student C: Interests in 'puzzles' and 'general knowledge', aptitudes in 'logical reasoning'. Recommended NTSE Preparation. Result: Qualified NTSE stage 2 and received scholarship.
+- Student C: Interests in 'scoring well in board exams' and 'structured learning', aptitudes in 'discipline' and 'following curriculum'. Recommended Special Batches for Boards. Result: Scored 95%+ in board examinations.
 `;

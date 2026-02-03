@@ -75,8 +75,8 @@ export default function AboutPage() {
                 </h2>
                 <p className="mt-2 text-muted-foreground">
                   To provide quality coaching for academic excellence. We focus
-                  on expert guidance for classes 1 to 12 (CBSE), IIT-JEE, NEET,
-                  Olympiads, and more, ensuring every student gets personalized
+                  on expert guidance for classes 1 to 12 (CBSE, ICSE & BSEB), IIT-JEE, NEET,
+                  and more, ensuring every student gets personalized
                   attention and a strong conceptual foundation.
                 </p>
               </div>
@@ -94,6 +94,21 @@ export default function AboutPage() {
                   with the knowledge and skills to succeed in a competitive
                   world. We envision a future where our students become leaders,
                   driven by wisdom and a passion for learning.
+                </p>
+              </div>
+            </div>
+             <div className="flex items-start gap-4">
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <TestTube2 className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h2 className="font-headline text-2xl font-bold text-foreground">
+                  Innovative Learning
+                </h2>
+                <p className="mt-2 text-muted-foreground">
+                  We utilize modern teaching techniques and digital resources for
+                  effective learning and academic success in a personalized
+                  environment.
                 </p>
               </div>
             </div>

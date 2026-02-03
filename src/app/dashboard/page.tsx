@@ -22,14 +22,14 @@ const student = {
 
 const enrolledCourses = [
   {
-    id: 'full-stack',
-    name: 'Full Stack Web Development',
+    id: 'iit-jee-neet',
+    name: 'IIT-JEE & NEET Foundation',
     progress: 75,
-    nextLesson: 'Module 4: Deployment',
+    nextLesson: 'Physics: Advanced Mechanics',
   },
   {
-    id: 'python',
-    name: 'Python Programming',
+    id: 'academic-coaching',
+    name: 'Academic Coaching (10th)',
     progress: 100,
     nextLesson: 'Completed',
   },

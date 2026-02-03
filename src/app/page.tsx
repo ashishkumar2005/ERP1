@@ -4,8 +4,11 @@ import {
   ArrowRight,
   BookOpen,
   BrainCircuit,
+  CheckCircle,
   ShieldCheck,
+  Star,
   Trophy,
+  Users,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -30,20 +33,28 @@ const testimonialImages = PlaceHolderImages.filter((img) =>
 export default function Home() {
   const stats = [
     {
-      icon: <Trophy className="h-8 w-8 text-primary" />,
-      label: 'IIT-JEE/NEET Courses',
+      icon: <BookOpen className="h-8 w-8 text-primary" />,
+      label: 'Coaching for Classes 1st to 12th',
     },
     {
-      icon: <BookOpen className="h-8 w-8 text-primary" />,
-      label: 'Classes 1st to 12th',
+      icon: <Trophy className="h-8 w-8 text-primary" />,
+      label: 'IIT-JEE / NEET Foundation Courses',
+    },
+    {
+      icon: <Users className="h-8 w-8 text-primary" />,
+      label: 'Special Batches for CBSE / ICSE & BSEB',
     },
     {
       icon: <BrainCircuit className="h-8 w-8 text-primary" />,
-      label: 'Concept Clarity & Smart Learning',
+      label: 'Focus on Concept Clarity & Smart Learning',
+    },
+    {
+      icon: <CheckCircle className="h-8 w-8 text-primary" />,
+      label: 'Doubt Sessions, Weekly Tests & Performance Tracking',
     },
     {
       icon: <ShieldCheck className="h-8 w-8 text-primary" />,
-      label: 'Supportive Environment',
+      label: 'Safe, Supportive, and Motivating Environment',
     },
   ];
 
@@ -90,7 +101,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-16 sm:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
             {stats.map((stat, index) => (
               <div
                 key={index}
