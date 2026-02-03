@@ -1,6 +1,6 @@
-import { GraduationCap } from 'lucide-react';
+import { Lightbulb } from 'lucide-react';
 import type { SVGProps } from 'react';
 
 export const Icons = {
-  logo: (props: SVGProps<SVGSVGElement>) => <GraduationCap {...props} />,
+  logo: (props: SVGProps<SVGSVGElement>) => <Lightbulb {...props} />,
 };
