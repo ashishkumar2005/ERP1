@@ -26,9 +26,9 @@ const courseImages = PlaceHolderImages.filter((img) =>
 export default function CoursesPage() {
   return (
     <div className="bg-background">
-      <section className="bg-card py-8">
+      <section className="py-2">
         <div className="container mx-auto px-4 text-center md:px-6">
-          <h1 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h1 className="font-headline text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
             Our Courses
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
@@ -38,14 +38,18 @@ export default function CoursesPage() {
         </div>
       </section>
 
-      <section className="py-8">
-        <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-2 lg:grid-cols-3 md:px-6">
+      <section className="py-2">
+        <div className="container mx-auto grid grid-cols-1 place-items-center gap-8 px-4 md:px-6">
           {courses.map((course) => {
             const image = courseImages.find((img) => img.id === course.imageId);
             return (
-              <div key={course.id} id={course.id} className="scroll-mt-20">
+              <div
+                key={course.id}
+                id={course.id}
+                className="w-full max-w-3xl scroll-mt-20"
+              >
                 <Card className="flex h-full flex-col overflow-hidden">
-                  <div className="relative h-48 w-full">
+                  <div className="relative h-40 w-full">
                     {image && (
                       <Image
                         src={image.imageUrl}
@@ -58,7 +62,7 @@ export default function CoursesPage() {
                   </div>
                   <div className="flex flex-grow flex-col">
                     <CardHeader className="p-4">
-                      <CardTitle className="font-headline text-xl">
+                      <CardTitle className="font-headline text-lg">
                         {course.name}
                       </CardTitle>
                       <CardDescription className="flex flex-wrap items-center gap-x-2 gap-y-2 pt-2">
